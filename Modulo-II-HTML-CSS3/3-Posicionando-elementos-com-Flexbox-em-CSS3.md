@@ -53,6 +53,7 @@ São os elementos filhos diretos do Flex Container e também podem se tornar Fle
 - order
 - align-self
 
+---
 # Fundamentos do Flexbox - Parte 1
 
 ### Sugestões
@@ -191,6 +192,8 @@ itens
 ● space-between: cria um espaçamento igual entre os elementos
 ● space-around: os espaçamentos do meio são duas vezes
 maiores que o inicial e final
+
+---
 
 # Fundamentos Flexbox - Parte II
 - Veremos as propriedades dos Flex-Items

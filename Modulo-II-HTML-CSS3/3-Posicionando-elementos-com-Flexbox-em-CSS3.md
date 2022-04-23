@@ -1,4 +1,10 @@
-# Introdução ao Curso
+# 🔎 Table of Contents
+- [Introdução]()
+    - []()
+- [Fundamentos do Flexbox - Parte 1]()
+- [Fundamentos do Flexbox - Parte 2]()
+- [Projeto]()
+# 🔸 Introdução ao Curso 
 
 ## Documentos das práticas
 - [Karen Santos - Projeto Flexbox DIO](https://gitlab.com/karensantos/project-flexbox-dio)
@@ -54,7 +60,7 @@ São os elementos filhos diretos do Flex Container e também podem se tornar Fle
 - align-self
 
 ---
-# Fundamentos do Flexbox - Parte 1
+#  🔸 Fundamentos do Flexbox - Parte 1
 
 ### Sugestões
  - VSCode
@@ -195,7 +201,7 @@ maiores que o inicial e final
 
 ---
 
-# Fundamentos Flexbox - Parte II
+#  🔸 Fundamentos Flexbox - Parte II
 - Veremos as propriedades dos Flex-Items
 
 ## Flex-grow

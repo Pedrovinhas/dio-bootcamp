@@ -488,9 +488,13 @@ São pilhas de tecnologias, conjuntos de softwares necessários e suficientes pa
 ### Baixar XAMP
 
 X - Sistem operacional (Linux, Windows, MacOS)
+
 A - Apache
+
 M - MySQL/MariaDB (Banco de dados)
+
 P - PHP
+
 P - Pearl
 
 ![interface](https://xamppguide.com/wp-content/uploads/2022/01/xampp-control-panel12.png)

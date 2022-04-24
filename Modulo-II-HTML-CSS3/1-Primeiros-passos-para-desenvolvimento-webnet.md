@@ -508,6 +508,7 @@ P - Pearl
 #### Tags PHP
 
 ``<?php ?>``: permite usar códigos dentro dessa tag
+
 ``<? ?>``: também funciona, mas alguns navegadores dão problema de compatiblidade.
 
 #### Index.php e Javascript

@@ -3,9 +3,13 @@
     <img width=150px src="./assets/dio-logo.jpg" alt="Logo da Digital Inovation One">
 </div>
 
+<p align=center>
+    <img src="https://img.shields.io/github/stars/pedrovinhas/estudos?label= ⭐ stars&message=MIT&color=4A1194&labelColor=ff7f00" alt="Badge stars">
+    <img src="https://shields.io/badge/commits-23-ff7f00&?logo=github&logoColor=black&style=flat?&color=4A1194&labelColor=ff7f00&" alt="Badge commits">
+</p>
 
 [![commits](https://badgen.net/github/commits/Pedrovinhas/estudos/master)](https://github.com/Pedrovinhas/estudos/commits/master?icon=git&color=f1f1f1)
-![stars](https://img.shields.io/github/stars/pedrovinhas/estudos?label=stars&message=MIT&color=ff7f00&labelColor=4A1194)
+
 
 ## Objetivo
 

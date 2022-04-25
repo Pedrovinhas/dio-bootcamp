@@ -518,3 +518,6 @@ P - Pearl
 #### Index.php e Javascript
 - Como funciona agora com Javascript
 - Nosso código vai dentro da tag ``<script> </script>`` 
+
+---
+<blockquote> Feito por Pedro Henrique Vinhas 🪐 </blockquote>

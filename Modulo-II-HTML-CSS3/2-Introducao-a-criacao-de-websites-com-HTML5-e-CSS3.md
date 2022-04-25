@@ -785,3 +785,6 @@ a {
 }
 
 ```
+
+---
+<blockquote> Feito por Pedro Henrique Vinhas 🪐 </blockquote>

@@ -364,3 +364,5 @@ baseline: utiliza a linha base da tipografia
 ![align](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a8913d0a-d888-4584-a6e5-885c7a5492a3/order.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220424%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220424T181657Z&X-Amz-Expires=86400&X-Amz-Signature=2d2a6c6c082a259f775db86ff87ee5c6c91f2dd6c930a7638f758fa2e2c61312&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22order.gif%22&x-id=GetObject)
 
 ---
+
+<blockquote> Feito por Pedro Henrique Vinhas 🪐 </blockquote>

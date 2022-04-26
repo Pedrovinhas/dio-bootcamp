@@ -26,5 +26,9 @@ Nesse repositório estão as anotações dos módulos, desafios e projetos const
 - [Módulo V - Banco de Dados](/Modulo-V-Banco-de-Dados/)
 - [Módulo VI - NodeJS](/Modulo-VI-NodeJS/)
 
+## Comunidade
+> Fórum do curso
+> Comunidade online (discord)
+
 --- 
 <blockquote> Feito por Pedro Henrique Vinhas 🪐 </blockquote>

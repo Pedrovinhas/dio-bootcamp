@@ -222,13 +222,13 @@ Colocamos ele ao final da tag ``body`` pois a página é lida de cima para baixo
 - Retorna um **HTMLCollection** com a tag ``h1`` no índice 0.
 - Mudando o texto para vermelho
 
-### ``document.getElementById('id')`` 
+#### ``document.getElementById('id')`` 
 - Retorna o elemento com o id passado
 
-### ``document.getElementsByClassname('classe')`` 
+#### ``document.getElementsByClassname('classe')`` 
 - Retorna os elementos com a classe passada
 
-### ``document.querySelector('.id')`` 
+#### ``document.querySelector('.id')`` 
 - Retorna elemento com a tag, ou classe, ou id passado.
 - Se usamos id, devemos passar com o # antes.
 - Se usamos classe, devemos passar com o . antes.

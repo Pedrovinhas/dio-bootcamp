@@ -1,6 +1,6 @@
 <div align=center>
-    <img width=150px src="./assets/spread-logo.png" alt="Logo da Spread">
-    <img width=150px src="./assets/dio-logo.jpg" alt="Logo da Digital Inovation One">
+    <img width=150px src="./.github/spread-logo.png" alt="Logo da Spread">
+    <img width=150px src="./.github/dio-logo.jpg" alt="Logo da Digital Inovation One">
 </div>
 
 <p align=center>

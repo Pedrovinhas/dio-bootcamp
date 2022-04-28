@@ -11,7 +11,7 @@
 ##  ✏ Descrição
 
 Nesta atividade, vamos criar uma página que carrega fotos aleatórias de gatinhos sempre que clicamos em um botão.
-1. Utilize a API ` ` para fazer as chamadas com o método `fetch()`
+1. Utilize a API `https://thatcopy.pw/catapi/rest/` para fazer as chamadas com o método `fetch()`
 2. Utilize seus conhecimentos na manipulação do DOM para criar a imagem e ativar o evento de clique do botão.
 
 ## ✔ Requisitos 
@@ -19,5 +19,6 @@ Nesta atividade, vamos criar uma página que carrega fotos aleatórias de gatinh
 * [CSS básico](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 * [MDN Mozilla - Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
+---
 
 <blockquote> Feito por Pedro Henrique Vinhas 🪐 </blockquote>

@@ -190,7 +190,7 @@ soma(3, 5);
 │   └── 📂 img
 │     
 │
-└── index.html
+└── 📜 index.html
 ```
 
 ## Inserindo javascript numa página HTML

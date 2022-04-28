@@ -16,3 +16,11 @@
 | [Introdução ao Typescript: explorando Classes, Tipos e Interfaces](./4-Recriando-a-pagina-inicial-do-Instagram.md) |  ✔    |
 | [Desafios Inicias JS - Spread FullStack](./4-Recriando-a-pagina-inicial-do-Instagram.md) |  ✔    |
 | [Aprenda a criar um sistema de estacionamento usando Typescript](./4-Recriando-a-pagina-inicial-do-Instagram.md) |  ✔    |
+
+
+## To do
+- [ ] Adicionar Table of Contents
+- [ ] Adicionar as fotos com links quebrados.
+- [ ] README.md dos projetos.
+- [ ] Diferença Map x ForEach complementação.
+- [ ] Atividades práticas faltando.

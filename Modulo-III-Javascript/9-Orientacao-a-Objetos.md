@@ -35,7 +35,6 @@
 - Os programas são objetos que possuem uma série de propriedades
 
 #### Pilares
-
 1.**Herança**
 2.**Polimorfismo**
 3.**Encapsulamento**
@@ -54,19 +53,19 @@
 
 - Objeto filho herda propriedades e métodos do objeto pai
 
-![imagem]()
+![imagem](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2618fa18-7533-4a8f-a82e-8b4d1898b205/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220428%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220428T195942Z&X-Amz-Expires=86400&X-Amz-Signature=e569a2075d96e8e121f699ba46625836359b0a91e83a5df5c5ee12dd84cf5cc5&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 ### Encapsulamento
 
 - Cada classe tem propriedades e métodos independetes do restante do código
 
-![imagem]()
+![imagem](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d42209a7-c1d1-4e8a-9fa9-e97d887d1cb4/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220428%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220428T195954Z&X-Amz-Expires=86400&X-Amz-Signature=3b5412fb854c01fb3106300fae2983f1600e5248d5203564f1345af469e38d55&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 ### Polimorfismo
 
 - Objetos podem herdar a mesma classe pai, mas se comportarem de forma diferente quando invocamos seus métodos
 
-![imagem]()
+![imagem](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ce183f61-9227-4048-8b41-9fb16739e4d9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220428%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220428T195957Z&X-Amz-Expires=86400&X-Amz-Signature=e3bf55ae7aeceef9c5d03426b2b694b35731845154656bb6cc2d0598d8dec4de&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 # Orientação a Objetos em Javascript
 

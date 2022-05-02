@@ -13,7 +13,8 @@
 5. Alteramos nosso package.json
 6. Linkamos com a tag `script`no html.
 
-![imagem](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5f7eb442-8d25-4936-889a-c0e4a5afe691/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220429T024341Z&X-Amz-Expires=86400&X-Amz-Signature=0d2276c10f00ad39348c4b04d7f31a1bf9b3ab0d3eec7e65586db470a45a800c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![imagem](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5f7eb442-8d25-4936-889a-c0e4a5afe691/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220502%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220502T141714Z&X-Amz-Expires=86400&X-Amz-Signature=4239c22998e1d9f74f06e887a19c33d93d9f0a4c55d9e8093cb7545d3fb1221f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+
 
 ## Escrevendo a função soma com typescript
 - Quando temos o typescript instalado temos acesso ao `tsc` que é o compilador do TypeScript
@@ -160,11 +161,170 @@ const animal: IDomestico = {
 - Temos que saber como tratar tipos que tem no Desenvolvimento Web.
 - Iremos ver como tratar o tipo `input` da web
 
-### `type HTMLInputElement`
+### `type as HTMLInputElement`
 - Como fazer para o TypeScript saber que estamos pegando não um elemento genérico da página, mas especificamente um input?
 - Se quisessemos pegar outro elemento, era só trocar o input pela tag correspondente.
+- Conseguimos ver os métodos que o elemento possui com mais facilidade.
 
 ```ts
+const input = document.getElementById('input') as HTMLInputElement // Dizemos que o retorno volta isso.
+
+input.addEventListener('input', (event) => {
+    const i = event.currentTarget as HTMLInputElement
+
+    console.log(i.value)
+})
+
+```
+
+## Generic types
+### <>
+- Permite com o que o Typescript infira os tipos de dados, de acordo com o que passamos
+- Normalmente definimos como `<T>`
+- Usamos normalmente em chamadas de API quando não sabemos o que vai voltar dela.
+
+```ts
+function appendList<T>(array: any[], valor: T) {
+    return array.map(item => item + valor)
+}
+
+appendList([1,2,3], 1)
+
+```
+
+## Desenvolvendo condicionais a partir de parâmetros
+- Queremos acessar tanto a Interface do Usuário quanto do Admin na hora de recebermos os parâmetros.
+- Para isso podemos verificar se na Interface temos determinado propriedade que tipamos com o valor da propriedade da Interface e o parâmetro recebido na função.
+
+```ts
+interface IUsuario {
+    id: string;
+    email: string;
+}
+
+interface IAdmin extends IUsuario {
+    cargo: 'gerente' | 'coordenador' | 'supervisor'
+}
+
+function redirection(usuario: IUsuario | IAdmin) {
+    if ('cargo' in usuario) {
+        // redirecionar para a àrea de administração
+    }
+
+    // redireiconar para a àrea de usuário
+}
 
 
+```
+
+
+## Utilizando o caracter `?` para variáveis opcionais
+- Esse caractere transforma o item em opcional, ou seja, podemos passar ou não quando estivermos fazendo a tipagem.
+- É um valor que pode ou não estar definido
+
+```ts
+interface IUsuario {
+    id: string;
+    email: string;
+    cargo?: 'gerente' | 'coordenador' | 'supervisor' | 'funcionario' |
+}
+
+function redirection(usuario: IUsuario) {
+    if(usuario.cargo) {
+        // redirecionar(usuario.cargo);
+    }
+
+    // redirecionar para a área do usuário
+}
+```
+
+## Criando variáveis com propriedade readonly e private
+- Criamos o valor `readonly` e `private` na definição do `type` e iteramos para todas as chaves (valores) da nossa Interface.
+- `-?` Significa para remover os valores opcionais.
+
+
+```ts
+interface Cachorro {
+    nome: string;
+    idade: number;
+    parqueFavorito?: string
+}
+
+type CachorroSomenteLeitura = {
+    readonly [K in keyof Cachorro]-? : Cachorro[K]
+}
+
+class MeuCachorro implements CachorroSomenteLeitura {
+    idade;
+    nome;
+    parqueFavorito;
+
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade
+    }
+}
+
+const cao = new MeuCachorro('Apolo', 14)
+
+
+```
+
+## Como importar bibliotecas com typescript
+- Usamos muito bibliotecas externas para fazer nosso projeto
+- Vamos aprender a estender os tipos dela sem alterar os types definidos dentro dela.
+
+- Quando usamos bibliotecas, corremos o risco de sobrescrever os tipos, se criamos interfaces com mesmo nome.
+- Aí que entro o arquivo `.d.ts`, pois lá vamos definir as nossas interfaces sem correr esse risco.
+
+![imagem](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/024516b3-9f77-4e3b-93f2-462212470a7d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220429T141444Z&X-Amz-Expires=86400&X-Amz-Signature=d28869a0f2ef8c04643d2029496cf65fb333533f13fd6c02fad8f3579af8d8f3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+
+### `@types`
+- Se a biblioteca não definir os próprios tipos, precisamos instalar a biblioteca de tipos também dela
+- É muito importante também instalar as bibliotecas que estejam já tipadas com Typescript `@types/biblioteca`
+- No site do Typescript tem as bibliotecas para instalarmos já com os tipos.
+
+### tsconfig.json
+- É onde fica todas configurações do Typescript, como compilação pelo Bundler, versão do módulo que o JS está usando etc.
+
+### `typing.d.ts`
+- Esse é nosso arquivo de configuração de tipos dentro de qualquer projeto com bibliotecas externas.
+- O que adicionarmos aqui, se tiver o mesmo nome dos tipos na biblioteca externa, ele só vai somar as duas interfaces e vamos ter acesso aos itens.
+
+#### Exemplo com JQuery
+
+`📜 typing.d.ts`
+
+```ts
+    interface JQuery {
+        novaFuncao(): void
+    }
+```
+
+
+## Exemplo de como usar Omit e conclusão do curso.
+- Sempre consultar a documentação do Typescript
+
+### O que é o Omit?
+- No Omit, podemos omitir uma propriedade passando nos argumentos
+1. O nome da interface
+2. O nome da propriedade.
+- Na hora da tiparmos, essa propriedade já não aparecerá como obrigatória/sugestão.
+
+
+```ts
+    interface Pessoa {
+        nome: string;
+        idade: number;
+        nacionalidade: string;
+    }
+
+    interface Brasileiro extends Omit<Pessoa, 'nacionalidade'> {
+
+    }
+
+    const brasileiro: Brasileiro = {
+        nome: 'Pedro',
+        idade: '23'
+    }
 ```
